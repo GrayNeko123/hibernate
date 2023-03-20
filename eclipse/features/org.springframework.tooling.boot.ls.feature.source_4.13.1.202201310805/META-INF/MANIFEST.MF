@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.0
+Build-Jdk-Spec: 11
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.boot.ls.feature/pom.xml
+SHA-256-Digest: favLO2EvVjiq+NIB98izQnPKsSO39Cmab5gpgS7tpIc=
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.boot.ls.feature/pom.properties
+SHA-256-Digest: +V2sM5R5uhZ1jblnJHt3OpQx8Qbyzhb25f/vWUgFeeY=
+
+Name: feature.xml
+SHA-256-Digest: 6k3RL8kJwDbChoifk229iLhFnI2mUl6aTjtuOo32deQ=
+
+Name: feature.properties
+SHA-256-Digest: AgwRbx4rXmsIxaAtJSFOVeGCRO1ADESif0yVKH6EimA=
+

@@ -1,0 +1,7 @@
+*.jmod
+*.jar
+*.zip
+*.index
+*.jsa
+*.dll
+modules

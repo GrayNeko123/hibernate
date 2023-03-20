@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.springframework.tooling.bosh.ls.feature.source" version="4.13.1.202201310805" label="BOSH Language Server Feature Developer Resources" provider-name="VMware, Inc.">
+  <description>
+       %description
+    </description>
+  <copyright>
+       %copyright
+    </copyright>
+  <license url="%licenseUrl">
+       %license
+    </license>
+  <includes id="org.springframework.tooling.bosh.ls.feature" version="4.13.1.202201310805"/>
+  <plugin id="org.springframework.tooling.bosh.ls.source" version="1.30.0.202201310805" download-size="0" install-size="0" unpack="false"/>
+</feature>

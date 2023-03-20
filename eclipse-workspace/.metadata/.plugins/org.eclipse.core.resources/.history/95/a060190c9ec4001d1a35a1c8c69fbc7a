@@ -1,0 +1,17 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="emp")
+public class EmpBean {
+	
+	private Integer empid ;
+	private String empname ;
+	private Integer salary ;
+	private Character sex;
+	private Byte[] photo;
+	private deptid
+	
+}

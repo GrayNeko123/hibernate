@@ -1,0 +1,9 @@
+INDEX VERSION 1.131
+C:\JavaFramework\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2220232451.index
+\labweb-jdbc\src\main\java
+C:\JavaFramework\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2401021159.index
+\labweb-jdbc\src\main\java
+C:\JavaFramework\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2736481701.index
+\labweb-test\src\main\java
+C:\JavaFramework\eclipse-workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2079656560.index
+\labweb-jdbc\src\main\java

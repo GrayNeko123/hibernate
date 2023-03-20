@@ -1,0 +1,6 @@
+package model;
+
+public class DeptBean {
+	private Interger deptid;
+	private String deptname;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature id="org.springframework.boot.ide.main.feature.source" version="4.13.1.202201311654" label="Spring Tool Suite 4 Main Feature Developer Resources" provider-name="VMware, Inc.">
+  <description>
+       %description
+    </description>
+  <copyright>
+       %copyright
+    </copyright>
+  <license url="%licenseUrl">
+       %license
+    </license>
+  <includes id="org.springframework.boot.ide.main.feature" version="4.13.1.202201311654"/>
+  <plugin id="org.springframework.ide.eclipse.boot.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.boot.templates.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.boot.validation.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.boot.launch.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.boot.wizard.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.boot.restart.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.imports.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.buildship30.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+  <plugin id="org.springframework.ide.eclipse.maven.pom.source" version="4.13.1.202201311654" download-size="0" install-size="0" unpack="false"/>
+</feature>

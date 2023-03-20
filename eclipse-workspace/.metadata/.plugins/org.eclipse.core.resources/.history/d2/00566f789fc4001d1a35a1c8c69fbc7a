@@ -1,0 +1,37 @@
+package test;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.MetadataSources;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+
+import model.EmpBean;
+
+public class EmpBeanTest {
+
+	public static void main(String[] args) {
+		StandardServiceRegistry serviceRegistry =
+				new StandardServiceRegistryBuilder().configure().build();
+		SessionFactory factory = new MetadataSources(
+				serviceRegistry).buildMetadata().buildSessionFactory();
+		Session session=factory.openSession();
+		Transaction trx=session.beginTransaction();
+		
+		EmpBean insert=new EmpBean();
+		insert.setEmpid(66);	//現在的版本不會報錯，到沒啥意義，終究是資料庫自己給。
+		insert.setEmpname("G");
+		insert.setSalary(123);
+		insert.setSex('m');
+		insert.setPhoto(null);
+		insert.setDeptid(50);
+		session.save(insert);
+		
+		trx.commit();
+		
+		session.close();
+		factory.close();
+	}
+
+}

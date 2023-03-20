@@ -1,0 +1,94 @@
+package model.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import model.domain.ProductBean;
+import model.hibernate.HibernateUtil;
+
+public class ProductDAOJdbc implements ProductDAO {
+	private SessionFactory sessionFactory=null;
+	
+	public ProductDAOJdbc(SessionFactory sessionFactory) {
+		super();
+		this.sessionFactory = sessionFactory;
+	}
+	
+	public Session getSession() {
+		return this.sessionFactory.getCurrentSession();
+	}
+	
+	
+	public static void main(String[] args) {
+		SessionFactory sessionFactory=HibernateUtil.getSessionFactory();
+		
+		ProductDAO dao = new ProductDAOJdbc();
+		List<ProductBean> beans = dao.select();
+		System.out.println("bean="+beans);
+	}
+
+	@Override
+	public ProductBean select(Integer id) {
+		if(id!=null) {
+			return this.getSession().get(ProductBean.class, id);
+		}
+		return null;
+	}
+	
+
+	@Override
+	public List<ProductBean> select() {
+		return this.getSession().createQuery("From model.domain.ProductBean",ProductBean.class).list();
+	}
+	
+	@Override
+	public ProductBean insert(ProductBean bean) {
+		if(bean!=null && bean.getId()!=null) {
+			ProductBean temp=this.getSession().get(ProductBean.class,bean.getId());
+			if(temp==null) {
+				this.getSession().save(bean);
+				return bean;
+			}
+		}
+		return null;
+	}
+	
+
+	@Override
+	public ProductBean update(String name, Double price,
+			java.util.Date make, Integer expire, Integer id) {
+		if(id!=null) {
+			ProductBean temp=this.getSession().get(ProductBean.class,id);
+			if(temp!=null) {
+				temp.setName(name);
+				temp.setPrice(price);
+				temp.setMake(make);
+				temp.setExpire(expire);
+				return temp;
+			}
+		}
+		return null;
+	}
+	
+	private static final String DELETE = "delete from product where id=?";
+	@Override
+	public boolean delete(Integer id) {
+		if(id!=null) {
+			ProductBean temp=this.getSession().get(ProductBean.class, id);
+			if(temp!=null) {
+				this.getSession().delete(temp);
+				return true;
+			}
+		}
+	
+		return false;
+	}
+}

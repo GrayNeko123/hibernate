@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.0
+Build-Jdk-Spec: 11
+
+Name: feature.xml
+SHA-256-Digest: e3A7KKpT1Bbu4RLi5XO6yW74+uIYL8IuP79tQdp4o/Y=
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.cloudfoundry.manifest.ls.feature/pom.properties
+SHA-256-Digest: j7HjkyEiMy73qJWMBxcrsFzHcGbf1SlSRynL0wpAAPQ=
+
+Name: feature.properties
+SHA-256-Digest: qcg6col37kQHikqjJcNzrk4EoFaCTjfw0+RcEhU+rvE=
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.cloudfoundry.manifest.ls.feature/pom.xml
+SHA-256-Digest: /DVshFa9JFYVQ7EcR7BLZ6XezJ63Y2Ss9zhDl4U0SVM=
+

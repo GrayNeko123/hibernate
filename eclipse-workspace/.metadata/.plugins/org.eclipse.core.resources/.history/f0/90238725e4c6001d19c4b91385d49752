@@ -1,0 +1,77 @@
+package model.dao;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import model.domain.CustomerBean;
+
+public class CustomerDAOJdbc implements CustomerDAO {
+	private SessionFactory sessionFactory=null;
+		
+	public CustomerDAOJdbc(SessionFactory sessionFactory) {
+		super();
+		this.sessionFactory = sessionFactory;
+	}
+	public Session getSession() {
+		return this.sessionFactory.getCurrentSession();
+	}
+	
+	
+	public static void main(String[] args) {
+		CustomerDAO dao = new CustomerDAOJdbc();
+		CustomerBean bean = dao.select("Babe");
+		System.out.println("bean="+bean);
+		
+		boolean result = dao.update("E".getBytes(),
+				"ellen@lab.com", new java.util.Date(0), "Ellen");
+		System.out.println("result="+result);
+	}
+	
+	@Override
+	public CustomerBean select(String custid) {
+		if(custid!=null) {
+			return this.getSession().get(CustomerBean.class,custid);
+		}
+		return null;
+	}
+
+	@Override
+	public boolean update(byte[] password, String email, java.util.Date birth, String custid) {
+		if(custid!=null) {
+			Session temp=getSession().get(CustomerBean.class, custid);
+			if()
+		}
+		
+		
+		if(custid!=null) {
+			try(
+				Connection conn = DriverManager.getConnection(URL, USERNAME, PASSWORD);
+				PreparedStatement stmt = conn.prepareStatement(UPDATE);) {
+				
+				stmt.setBytes(1, password);
+				stmt.setString(2, email);
+				if(birth!=null) {
+					long time = birth.getTime();
+					stmt.setDate(3, new java.sql.Date(time));
+				} else {
+					stmt.setDate(3, null);
+				}
+				stmt.setString(4, custid);
+				
+				int i = stmt.executeUpdate();
+				if(i==1) {
+					return true;
+				}
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return false;
+	}
+}

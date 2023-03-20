@@ -1,0 +1,20 @@
+Signature-Version: 1.0
+Created-By: 11.0.12 (Eclipse Foundation)
+SHA-256-Digest-Manifest: SH7W83yI1uaW3N+imBpdeGD0iMnpFcVPIfHU4p7Cr6U=
+SHA-256-Digest-Manifest-Main-Attributes: VY78hpPLQQcQWsSBC6hJVVQI+2YQxvr
+ V/A0xv/y73/0=
+
+Name: feature.xml
+SHA-256-Digest: O5eMP2FbAsuKSdDeKgoxjGZp0sgOzgqsbVPwXri1ymQ=
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.cloudfoundry.manifest.ls.feature/pom.properties
+SHA-256-Digest: MHjIi1pnPefIIq4oLlird+XBqQ3hjMhr15C9lsbstww=
+
+Name: feature.properties
+SHA-256-Digest: KmhvyQxWzSgKmqV3qg/0OUwCni/72Qgi70YK6AHhzD0=
+
+Name: META-INF/maven/org.springframework.boot.ide/org.springframework.to
+ oling.cloudfoundry.manifest.ls.feature/pom.xml
+SHA-256-Digest: U1WI+kOnF4uR/p1xE3Z7ElTPtewQBstcg89T/KKyCeY=
+

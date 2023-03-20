@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.5.0
+Build-Jdk-Spec: 11
+Bundle-ManifestVersion: 2
+Bundle-Name: Hibernate 4.0 libraries
+Bundle-SymbolicName: org.jboss.tools.hibernate.runtime.v_4_0;singleton:=
+ true
+Bundle-Version: 5.4.15.v20211001-1134
+Bundle-Localization: plugin
+Require-Bundle: org.apache.commons.collections,org.jboss.tools.hibernate
+ .libs.antlr.v_2_7_7,org.jboss.tools.hibernate.libs.dom4j.v_1_6_1,org.jb
+ oss.tools.hibernate.libs.freemarker.v_2_3_23,org.jboss.tools.hibernate.
+ libs.jtidy.v_r8-20060801,org.jboss.tools.hibernate.runtime.common,org.j
+ boss.tools.hibernate.runtime.spi,org.hibernate.eclipse
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ClassPath: .,lib/commons-logging-1.1.1.jar,lib/hibernate-commons-
+ annotations-4.0.1.Final.jar,lib/hibernate-core-4.0.1.Final.jar,lib/hibe
+ rnate-entitymanager-4.0.1.Final.jar,lib/hibernate-jpa-2.0-api-1.0.1.Fin
+ al.jar,lib/hibernate-tools-4.0.1.Final.jar,lib/jboss-logging-3.1.0.CR2.
+ jar,lib/jboss-transaction-api_1.1_spec-1.0.0.Final.jar,lib/javassist-3.
+ 12.1.GA.jar,lib/log4j-1.2.15.jar,lib/slf4j-api-1.5.8.jar,lib/slf4j-log4
+ j12-1.5.8.jar
+Bundle-Vendor: Red Hat
+Eclipse-BundleShape: dir
+Eclipse-SourceReferences: scm:git:https://github.com/jbosstools/jbosstoo
+ ls-hibernate.git;path="orm/plugin/runtime/org.jboss.tools.hibernate.run
+ time.v_4_0";commitId=7c222fb475e3a561f3839264d2c0322ba5cdc665
+Bundle-License: Eclipse Public License;link="http://www.eclipse.org/lega
+ l/epl-v10.html"
+
